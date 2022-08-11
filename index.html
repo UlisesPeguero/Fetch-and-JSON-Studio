@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Astronauts</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-    <h1>Astronauts</h1>
-    <div id="container">
-        <!-- List of astronauts will be added here dynamically -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Astronauts</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <h1>Astronauts</h1>
+  <div id="container"></div>
+
+  <template id="astronautCard">
+    <div class="astronaut">
+      <div class="bio">
+        <h3 id="name"></h3>
+        <ul>
+          <li id="hoursInSpace">Hours in space: </li>
+          <li id="active">Active: </li>
+          <li id="skills">Skills: </li>
+        </ul>
+      </div>
+      <img id="avatar" class="avatar" src="" alt="">
     </div>
-  </body>
+  </template>
+</body>
+
 </html>
