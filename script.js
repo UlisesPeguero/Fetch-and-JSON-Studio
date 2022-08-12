@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
 			const astronautCardTemplate = document.getElementById('astronautCard');
 
 			astronauts.sort((a, b) => {
-				return a.hoursInSpace - b.hoursInSpace;
+				return b.hoursInSpace - a.hoursInSpace;
 			});
 
 			for (let astronaut of astronauts) {
